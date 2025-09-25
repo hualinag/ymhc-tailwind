@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "tailwind",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

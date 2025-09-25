@@ -1,0 +1,1 @@
+export { tw } from './base/style/TailwindAttributeModifier'

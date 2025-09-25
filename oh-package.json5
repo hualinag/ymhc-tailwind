@@ -1,0 +1,25 @@
+{
+  "types": "",
+  "keywords": [
+    "jsbn",
+    "OpenHarmony",
+    "HarmonyOS"
+  ],
+  "author": "hihope",
+  "description": "jsbn（JavaScript BigInteger Library）是一个用于 JavaScript 环境中的大整数（BigInteger）计算的开源库。本软件是移植开源软件 jsbn 源码在 OpenHarmony 上进行功能适配。",
+  "ohos": {
+    "org": "opensource"
+  },
+  "main": "Index.ets",
+  "repository": "https://gitee.com/yyz116/jsbn",
+  "type": "module",
+  "version": "1.0.0",
+  "dependencies": {},
+  "tags": [
+    "Tools",
+    "Security"
+  ],
+  "license": "MIT",
+  "devDependencies": {},
+  "name": "@yyz116/jsbn"
+}
