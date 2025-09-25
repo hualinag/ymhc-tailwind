@@ -1,17 +1,17 @@
 {
   "types": "",
   "keywords": [
-    "jsbn",
+    "tailwind",
     "OpenHarmony",
     "HarmonyOS"
   ],
-  "author": "hihope",
-  "description": "jsbn（JavaScript BigInteger Library）是一个用于 JavaScript 环境中的大整数（BigInteger）计算的开源库。本软件是移植开源软件 jsbn 源码在 OpenHarmony 上进行功能适配。",
+  "author": "hualinag",
+  "description": "提供在 ArkUI 中以 Tailwind 语法进行样式编写的能力，适用于在不引入 H5 CSS 的前提下，用 直接为原生组件赋样式，实现通用组件皮肤化、主题切换、设计规范快速落地等场景",
   "ohos": {
     "org": "opensource"
   },
   "main": "Index.ets",
-  "repository": "https://gitee.com/yyz116/jsbn",
+  "repository": "https://github.com/hualinag/ymhc-tailwind.git",
   "type": "module",
   "version": "1.0.0",
   "dependencies": {},
@@ -21,5 +21,5 @@
   ],
   "license": "MIT",
   "devDependencies": {},
-  "name": "@yyz116/jsbn"
+  "name": "@ymhc/tailwind"
 }
