@@ -1,29 +1,39 @@
 {
-  "types": "",
+  "name": "@ymhc/tailwind",
+  "version": "1.0.0",
+  "description": "提供在 ArkUI 中以 Tailwind 语法进行样式编写的能力，适用于在不引入 H5 CSS 的前提下，用 `.attributeModifier(tw('...'))` 直接为原生组件赋样式，实现通用组件皮肤化、主题切换、设计规范快速落地。",
+  "author": "ymhc",
+  "license": "MIT",
+  "type": "module",
+  "main": "Index.ets",
+  "types": "Index.d.ets",
   "keywords": [
-    "tailwind"
+    "tailwind",
+    "ArkUI",
+    "ArkTS",
+    "HarmonyOS",
+    "OpenHarmony"
   ],
-  "author": "hualinag",
-  "description": "提供在 ArkUI 中以 Tailwind 语法进行样式编写的能力，适用于在不引入 H5 CSS 的前提下，用 直接为原生组件赋样式，实现通用组件皮肤化、主题切换、设计规范快速落地等场景",
   "ohos": {
-    "org": "opensource"
+    "org": "ymhc"
   },
+  "repository": "https://github.com/hualinag/ymhc-tailwind.git",
+  "bugs": "https://github.com/hualinag/ymhc-tailwind/issues",
+  "homepage": "https://github.com/hualinag/ymhc-tailwind#readme",
   "files": [
     "dist/**",
     "README.md",
     "LICENSE",
-    "changelog.md"
+    "changelog.md",
+    "example/**"
   ],
-  "main": "Index.ets",
-  "repository": "https://github.com/hualinag/ymhc-tailwind.git",
-  "type": "module",
-  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {},
+  "devDependencies": {},
   "tags": [
     "Tools",
-    "Security"
-  ],
-  "license": "MIT",
-  "devDependencies": {},
-  "name": "@ymhc/tailwind"
+    "UI"
+  ]
 }

@@ -2,6 +2,54 @@
 
 本包提供在 ArkUI 中以 Tailwind 语法进行样式编写的能力，适用于在不引入 H5 CSS 的前提下，用 `.attributeModifier(tw('...'))` 直接为原生组件赋样式，实现通用组件皮肤化、主题切换、设计规范快速落地等场景。所有实现均强类型（无 any/unknown），符合 ArkUI/ArkTS 规范。
 
+## 安装与使用（Installation & Usage）
+
+### 运行环境
+- HarmonyOS API 版本：建议与 ArkTS 编译器一致（Stage 模式）
+- 包管理：ohpm
+- 语言：ArkTS（.ets）
+
+### 依赖安装
+在你的组件/库工程中添加依赖（以 `@ymhc/tailwind` 为例）：
+
+```bash
+ohpm install @ymhc/tailwind --save
+```
+
+> 若使用私有/镜像源，请先：
+>
+> ```bash
+> ohpm config set registry https://ohpm.openharmony.cn/ohpm
+> ohpm login
+> ```
+
+### 引入与快速上手
+在 ArkUI 组件中使用 `.attributeModifier(tw('...'))`：
+
+```ets
+import { tw } from '@ymhc/tailwind'
+
+@Entry
+@Component
+struct DemoPage {
+  build() {
+    Column() {
+      Text('Hello ArkUI')
+        .attributeModifier(tw('text-2xl font-bold text-blue-600'))
+    }
+    .attributeModifier(tw('p-4 bg-white rounded-lg shadow-md'))
+  }
+}
+```
+
+> 示例代码见 `./example/` 目录。
+
+### 版本兼容
+- 字重仅映射到 ArkUI `FontWeight.Normal/Medium/Bold`；其余权重降级。
+- 部分 Tailwind token 若 ArkUI 暂无对应，将按文档中的降级策略处理。
+
+
+
 ## 覆盖优先级
 1. 组件默认值 → 2. 主题/系统模式 → 3. 组件入参 → 4. `.attributeModifier(tw('...'))`（最终覆盖）
 
@@ -306,3 +354,4 @@ Column() {
 
 适用：`w-[..]`、`h-[..]`、`text-[..]`、`leading-[..]`、`bg-[#..]`、`opacity-[..]`。
 
+---
