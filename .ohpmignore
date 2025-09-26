@@ -1,0 +1,15 @@
+src/**
+**/*.ets
+**/*.ts
+**/*.map
+**/*.protoBin
+oh_modules/**
+node_modules/**
+hvigor*/**
+.git/**
+.vscode/**
+build/**
+!dist/**
+README.md
+LICENSE
+changelog.md
