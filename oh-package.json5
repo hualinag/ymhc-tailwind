@@ -1,6 +1,6 @@
 {
   "name": "@ymhc/tailwind",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "提供在 ArkUI 中以 Tailwind 语法进行样式编写的能力，适用于在不引入 H5 CSS 的前提下，用 `.attributeModifier(tw('...'))` 直接为原生组件赋样式，实现通用组件皮肤化、主题切换、设计规范快速落地。",
   "author": "ymhc",
   "license": "MIT",
