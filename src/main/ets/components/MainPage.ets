@@ -1,8 +1,7 @@
 import { tw } from '.'
 
-@Entry
 @Component
-struct MainPage {
+export  struct MainPage {
   build() {
     Column({ space: 20 }) {
       // 在原生组件上直接挂修饰器，不使用包装组件
